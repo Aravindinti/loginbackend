@@ -1,0 +1,24 @@
+package in.co.vwit.engineering.resourceManagement.service;
+
+import org.apache.catalina.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.co.vwit.engineering.resourceManagement.Doa.UserDao;
+import in.co.vwit.engineering.resourceManagement.entity.user;
+
+@Service
+public class userService {
+
+	
+	@Autowired
+	private UserDao usd;
+	
+	public void save(user u) {
+		usd.save(u)	;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package in.co.vwit.engineering.resourceManagement.Doa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserDao extends JpaRepository<UserId, Integer> {
+
+}
